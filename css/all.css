@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family:Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css start */
+body{
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(27, 119, 104);
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family: cursive;
+    margin: 0 78px;
+}
+.search{
+    font-size: 24px;
+    margin-left: 78px;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 5px;
+    padding-right: 50px;
+}
+.search i{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.search input{
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFFFFF;
+    opacity: 0.3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #FFFFFF;
+    opacity: 0.3;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFFFFF;
+    opacity: 0.3;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFFFFF;
+    opacity: 0.3;
+}
+
+
+.container{
+    display: flex;
+    min-width: 679px;
+}
+
+.filter-list{
+    background-color: #EBEBEB;
+    width: 300px;
+    height: 540px;
+    margin-left: 38px;
+}
+.location{
+    padding: 15px 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.location h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.location select{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+hr{
+    opacity: 0.2;
+}
+.date{
+    padding: 15px 20px;
+    font-size: 20px;
+}
+.date h2{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.date span{
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.date div {
+    margin-top: 10px;
+}
+.date input{
+    padding:8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.to span{
+    margin-left: 12px;
+    margin-right: 16px;
+}
+.categories{
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.categories h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.condition-group ul{
+    margin: 10px 0;
+}
+.condition-group li{
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.filter-info{
+    padding: 30px 50px;
+}
+.tit-box{
+    font-weight: bold;
+}
+.showing-result{
+    font-size: 24px;
+}
+.showing-result span{
+    color: rgb(27, 119, 104);
+}
+.condition{
+    display: flex;
+    font-style: italic;
+}
+.condition span{
+    color: rgb(27, 119, 104);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(27, 119, 104);
+    border-radius: 20px;
+}
+.condition i{
+    cursor: pointer;
+}
+
+.card{
+    margin: 15px 0;
+    display: flex;
+}
+.card-photo{
+    width: 220px;
+    height: 220px;
+    background-color: rgb(204, 194, 181);
+}
+.card-info{
+    background-color: #FFFFFF;
+    width: 560px;
+}
+
+.card-info h2{
+    font-size: 24px;
+    color: rgb(27, 119, 104);
+    display: block;
+    margin: 20px 15px;
+}
+.card-info p{
+    display: block;
+    margin: 20px 15px;
+}
+
+.info-name{
+    padding: 0 15px;
+    font-weight: bold;
+}
+.info-condition{
+    margin: 10px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: #D7D7D7;
+    color: #FFFFFF;
+}
+
+
+.card-info i{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.info-location,.info-date{
+    color: #9B9B9B;
+}
